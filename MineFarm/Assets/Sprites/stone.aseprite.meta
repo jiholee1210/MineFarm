@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9fd87495cffa0e54f9473f60aa7fd4cd
+guid: 6a45d1c4dda4c8c409b184e24f843b90
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -76,7 +76,7 @@ ScriptedImporter:
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
-    defaultPivotAlignment: 0
+    defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
     mosaicPadding: 4
     spritePadding: 0
@@ -91,7 +91,7 @@ ScriptedImporter:
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
-    defaultPivotAlignment: 0
+    defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
     mosaicPadding: 4
     spritePadding: 0
@@ -102,7 +102,7 @@ ScriptedImporter:
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   importFileNodeState: 1
-  platformSettingsDirtyTick: 639011568703334582
+  platformSettingsDirtyTick: 639011565722014135
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -127,9 +127,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: mainfield
+  - name: stone
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -137,9 +137,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 225
-      height: 225
-    spriteID: 7cd2d0e058d2e154ab1664ecf1f6792a
+      width: 16
+      height: 11
+    spriteID: e025a87bb812e6a4bb7a4d72e4fb0628
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,25 +153,25 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 2694757937
+      value0: 3759402807
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: mainfield
+    name: stone
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: mainfield
+    - name: stone
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
-        width: 225
-        height: 225
-      spriteId: 7cd2d0e058d2e154ab1664ecf1f6792a
+        width: 16
+        height: 11
+      spriteId: e025a87bb812e6a4bb7a4d72e4fb0628
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -205,5 +205,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 225, y: 225}
-  previousTextureSize: {x: 256, y: 256}
+  canvasSize: {x: 16, y: 16}
+  previousTextureSize: {x: 32, y: 32}

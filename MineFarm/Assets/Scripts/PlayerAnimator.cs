@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class PlayerAnimator : MonoBehaviour
 {
+    [SerializeField] private AnimationClip mineClip;
+    
     Animator animator;
     SpriteRenderer spriteRenderer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -37,5 +39,12 @@ public class PlayerAnimator : MonoBehaviour
     public void SetMining(bool state)
     {
         animator.SetBool("IsMining", state);
+    }
+
+    public void SetMiningSpeed(float speed)
+    {
+        float clipLength = mineClip.length;
+        float atkSpeed = clipLength / speed;
+        animator.SetFloat("AtkSpeed", atkSpeed);
     }
 }

@@ -9,12 +9,14 @@ public class PlayerMovement : MonoBehaviour
     float inputY;
     Rigidbody2D rigidbody2D;
     PlayerAnimator playerAnimator;
+    PlayerInteract playerInteract;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<PlayerAnimator>();
+        playerInteract = GetComponent<PlayerInteract>();
     }
 
     // Update is called once per frame
@@ -33,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
     {
         inputX = value.Get<Vector2>().x;
         inputY = value.Get<Vector2>().y;
+        playerInteract.DetectMovement();
         playerAnimator.FlipSprite(inputX);
         playerAnimator.SetWalk(Mathf.Abs(inputX) + Mathf.Abs(inputY));
     }
